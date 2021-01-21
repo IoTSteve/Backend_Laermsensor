@@ -7,6 +7,8 @@ const mqtt = require('mqtt');
 const dbhandler = require('./databasehandler');
 require('dotenv/config');
 
+const config = require(`${process.env.SOUNDSENSE_CONFIG}`);
+
 
 
 
@@ -18,10 +20,10 @@ require('dotenv/config');
 //});
 
 
- var client = mqtt.connect("mqtt://eu.thethings.network:1883",{ 
- clientId:"soundsenstest1",
- username:"lora_soundsense",
- password:process.env.TTN_KEY,
+ var client = mqtt.connect(config.TTN_URL,{ 
+ clientId: config.TTN_CLI,
+ username: config.TTN_USR,
+ password: config.TTN_KEY,
  clean:true
  });
 
@@ -67,11 +69,11 @@ app.get('/', (req,res) => {
 });
 
 //connect to db
-mongoose.connect(process.env.DB_CONNECTION, 
+mongoose.connect(confi.DB_CONNECTION, 
 { useUnifiedTopology: false,
   useNewUrlParser: true},
  () => console.log('connected to db!')
  );
 
 //start listening to the server
-app.listen(3000);
+app.listen(3020);

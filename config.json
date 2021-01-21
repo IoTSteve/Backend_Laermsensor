@@ -1,0 +1,7 @@
+{
+  "DB_CONNECTION": "mongodb+srv://nodemcu:knoten123@cluster0.qr6po.mongodb.net/sempro?retryWrites=true&w=majority",
+  "TTN_KEY": "ttn-account-v2.qmQVx9XRSWpbE9vW-InNepTc7Jq_4lfVn4gH4HNUxnI",
+  "TTN_URL": "mqtt://eu.thethings.network:1883",
+  "TTN_CLI": "soundsenstest1",
+  "TTN_USR": "lora_soundsense"
+}

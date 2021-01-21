@@ -16,10 +16,6 @@ router.get('/', async (req, res) => {
 
 });
 
-//router.get('/specific', (req,res) => {
-//res.send('specific posts');
-//});
-
 router.post('/', async (req, res) => {
   //console.log(req.body);
   dbhandler.savedb({
