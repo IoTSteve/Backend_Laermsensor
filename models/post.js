@@ -1,17 +1,20 @@
 const mongoose = require('mongoose');
 
 const PostSchema = mongoose.Schema({
-  title: {
+  dev_id: {
     type: String,
     required: true
   },
-  description: {
+  payload_fields: {
     type: String,
     required: true
   },
-  date: {
+  metadata: {
+    type: String
+  },
+  ts: {
     type: Date,
-    default: Date.now
+    default: Date.now(),
   }
 });
 

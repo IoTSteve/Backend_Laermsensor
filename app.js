@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mqtt = require('mqtt');
+const dbhandler = require('./databasehandler');
 require('dotenv/config');
 
 
@@ -20,15 +21,27 @@ require('dotenv/config');
  var client = mqtt.connect("mqtt://eu.thethings.network:1883",{ 
  clientId:"soundsenstest1",
  username:"lora_soundsense",
- password:"TTN_KEY",
+ password:process.env.TTN_KEY,
  clean:true
  });
 
  client.on("connect", function(){ 
  console.log("connected to mqtt");
+ client.subscribe("lora_soundsense/devices/loransense1/up"); //+ wenn ich alle abfangen will. wildcard
  });
 
-
+client.on('message', function (topic, message) {
+  // message is Buffer
+  const data = JSON.parse(message.toString());
+  console.log(data);
+  dbhandler.savedb({
+    app_id: data.app_id,
+    dev_id: data.dev_id,
+    payload_fields: data.payload_fields,
+    metadata: data.metadata
+  })
+  .then((res) => console.log(res)).catch((err) => console.error(err));
+});
 
 
 
