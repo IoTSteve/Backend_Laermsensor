@@ -69,7 +69,7 @@ app.get('/', (req,res) => {
 });
 
 //connect to db
-mongoose.connect(confi.DB_CONNECTION, 
+mongoose.connect(config.DB_CONNECTION, 
 { useUnifiedTopology: false,
   useNewUrlParser: true},
  () => console.log('connected to db!')
