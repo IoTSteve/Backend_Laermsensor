@@ -8,7 +8,7 @@ function savedb(data) {
       payload_fields: JSON.stringify(data.payload_fields),
       metadata: JSON.stringify(data.metadata),
     });
-    //console.log(post)
+    gconsole.log(post)
 
     try {
       const savedPost = await post.save()
