@@ -16,7 +16,7 @@ Bisher besteht allerdings noch ein CORS bug welcher es nicht zulässt POST Reque
 <p>
 Alle bisherigen Verzeichnisse:
 <p>
-"/ " das homeverzechnis. Dies zeigt noch die Default Vue Komponenten an
+"/ " das Homeverzechnis. Dies zeigt noch die default Vue Komponenten an
 <p>
 "/about" 'This is an About Page'
 <p>
@@ -36,9 +36,9 @@ Alle bisherigen Verzeichnisse:
 <br></br>
  ## Kommende Features ##
 
- In den Kommenden Versionen wird noch das Fronend Weiterentwickelt mit funktionierender Mapbox und der Livedatenazeige.
+ In den Kommenden Versionen wird noch das Frontend Weiterentwickelt mit funktionierender Mapbox und der Livedatenazeige.
  <br></br>
- Die verbindung der Nodes zum TTN funktioniert bereits, allerdings werden noch keine Daten gesendet. Dies wird in kommenden versionen noch hinzugefügt.
+ Die verbindung der Nodes zum TTN funktioniert bereits, allerdings werden noch keine Daten gesendet. Dies wird in kommenden Versionen noch hinzugefügt.
  <br></br>
  Device aktivierung über einen QR Code Scanner mit anschließender Markerplatzierung auf der Mapbox mit den zugehörigen GPS Daten des mobile Devices welches die Aktivierung durchgeführt hat.
 <br></br>
