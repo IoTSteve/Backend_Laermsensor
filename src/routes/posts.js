@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
 
 router.post('/', async (req, res) => {
   //console.log(req.body);
-  dbhandler.savedb({
+  dbhandler.savedb({    //save funktion wird hier aufgerufen mit den objekten als inhalt die es über den post bekommt
       app_id: req.body.app_id,
       dev_id: req.body.dev_id,
       payload_fields: req.body.payload_fields,

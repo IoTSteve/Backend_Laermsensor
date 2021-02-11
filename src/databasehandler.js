@@ -1,5 +1,7 @@
 const Post = require('./models/post');
 
+
+//handelt die daten und speichert es in die datenbank
 function savedb(data) {
   return new Promise(async (resolve, reject) => {
     const post = new Post({
@@ -18,7 +20,7 @@ function savedb(data) {
     }
   });
 }
-
+//exportieren der savedb funktion
 module.exports = {
   savedb
 };
