@@ -36,7 +36,7 @@ Alle bisherigen Verzeichnisse:
 <br></br>
  ## Kommende Features ##
 
- In den Kommenden Versionen wird noch das Frontend Weiterentwickelt mit funktionierender Mapbox und der Livedatenazeige.
+ In den Kommenden Versionen wird noch das Frontend Weiterentwickelt mit funktionierender Mapbox und der Livedatenanzeige.
  <br></br>
  Die verbindung der Nodes zum TTN funktioniert bereits, allerdings werden noch keine Daten gesendet. Dies wird in kommenden Versionen noch hinzugefügt.
  <br></br>
